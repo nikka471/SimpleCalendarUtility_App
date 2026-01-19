@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "New Year Celebration",
+      "date": "2026-01-01",
+      "description": "Welcome the new year with joy and celebrations."
+    },
+    {
+      "id": "2",
+      "title": "Tech Conference",
+      "date": "2026-02-10",
+      "description": "Annual technology conference for developers."
+    },
+    {
+      "id": "3",
+      "title": "Music Festival",
+      "date": "2026-03-05",
+      "description": "Live music festival with popular bands."
+    }
+  ]
+}
