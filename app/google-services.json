@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "879312814541",
+    "project_id": "simple-calendar-utility-app",
+    "storage_bucket": "simple-calendar-utility-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879312814541:android:2d78564d8e8a2953308484",
+        "android_client_info": {
+          "package_name": "com.poliarc.simplecalendarutilityapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoJBK70-FrEEVtDORHegW467-AUo28pwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
