@@ -1,29 +1,9 @@
-//package com.poliarc.simplecalendarutilityapp.ui.detail_event
-//
-//import android.os.Bundle
-//import androidx.activity.enableEdgeToEdge
-//import androidx.appcompat.app.AppCompatActivity
-//import androidx.core.view.ViewCompat
-//import androidx.core.view.WindowInsetsCompat
-//import com.poliarc.simplecalendarutilityapp.R
-//
-//class EventDetailActivity : AppCompatActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        enableEdgeToEdge()
-//        setContentView(R.layout.activity_event_detail)
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-//            insets
-//        }
-//    }
-//}
-
 package com.poliarc.simplecalendarutilityapp.ui.detail_event
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.poliarc.simplecalendarutilityapp.R
 import com.poliarc.simplecalendarutilityapp.databinding.ActivityEventDetailBinding
 
 class EventDetailActivity : AppCompatActivity() {
@@ -34,6 +14,7 @@ class EventDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityEventDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.horizon)
 
         // Get data from intent
         val title = intent.getStringExtra("event_title") ?: "N/A"

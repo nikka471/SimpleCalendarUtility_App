@@ -5,44 +5,68 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="12dp"
-    app:cardElevation="4dp"
-    app:cardCornerRadius="12dp">
+    android:background="@color/horizon"
+
+    app:cardElevation="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Event Title"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black" />
+        android:background="@color/white"
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="12 Jan 2026"
-            android:textSize="14sp"
-            android:textColor="@android:color/darker_gray" />
+        <!-- Accent Strip -->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
 
-        <TextView
-            android:id="@+id/tvDescription"
-            android:layout_width="match_parent"
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="Event description goes here"
-            android:textSize="14sp"
-            android:maxLines="2"
-            android:ellipsize="end"
-            android:textColor="@android:color/black" />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Event Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/horizon" />
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="📅 12 Jan 2026"
+                android:textSize="13sp"
+                android:textColor="#6B7280" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Event description goes here"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#374151" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
+

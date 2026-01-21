@@ -1,8 +1,3 @@
-//package com.poliarc.simplecalendarutilityapp.ui.home
-//
-//class EventAdapter {
-//}
-
 package com.poliarc.simplecalendarutilityapp.ui.home
 
 import android.view.LayoutInflater

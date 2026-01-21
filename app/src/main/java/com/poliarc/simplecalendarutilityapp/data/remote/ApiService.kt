@@ -6,6 +6,6 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("events.json")   // file name in GitHub raw URL
+    @GET("events.json")
     fun getEvents(): Call<EventResponse>
 }

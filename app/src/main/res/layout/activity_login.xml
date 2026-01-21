@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF8F0"
+    android:background="@color/horizonback"
     tools:context=".auth.LoginActivity"
     android:padding="16dp">
 
@@ -19,14 +19,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/img" />
+        app:srcCompat="@drawable/horizonx" />
 
     <!-- App Name -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bauer Bodoni"
+        android:text="Horizon X Playr"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Because Every Wedding Needs a Plan"
+        android:text="Games That Stay With You"
         android:textColor="@color/black"
         android:textStyle="italic"
         app:layout_constraintTop_toBottomOf="@id/textView"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Login to your Account"
-        android:textColor="#c2631b"
+        android:textColor="@color/horizon"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@id/textView3"
         app:layout_constraintStart_toStartOf="parent"

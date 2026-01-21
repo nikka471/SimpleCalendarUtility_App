@@ -4,23 +4,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/horizonback"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Add New Event"
         android:textSize="22sp"
+        android:textColor="@color/horizon"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etEventTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:padding="5dp"
+
         android:hint="Event Title"
+        android:background="@drawable/edittextshape"
         android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/tvTitle"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,8 +36,11 @@
 
     <EditText
         android:id="@+id/etEventDate"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:padding="5dp"
+        android:background="@drawable/edittextshape"
+
         android:hint="Event Date (YYYY-MM-DD)"
         android:inputType="date"
         app:layout_constraintTop_toBottomOf="@id/etEventTitle"
@@ -40,20 +50,24 @@
 
     <EditText
         android:id="@+id/etNotes"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:padding="5dp"
         android:hint="Notes (Optional)"
+        android:background="@drawable/edittextshape"
         android:inputType="textMultiLine"
         app:layout_constraintTop_toBottomOf="@id/etEventDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSaveEvent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/greenbutton"
         android:text="Save Event"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/etNotes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

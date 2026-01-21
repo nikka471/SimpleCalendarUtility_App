@@ -1,53 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/horizonback"
     android:padding="16dp">
 
-    <LinearLayout
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@android:color/white">
 
-        <!-- Event Title -->
-        <TextView
-            android:id="@+id/tvEventTitle"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event Title"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:paddingBottom="8dp"/>
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        <!-- Event Date -->
-        <TextView
-            android:id="@+id/tvEventDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Event Date"
-            android:textSize="16sp"
-            android:textColor="#555555"
-            android:paddingBottom="12dp"/>
+            <!-- Event Title -->
+            <TextView
+                android:id="@+id/tvEventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/horizon"
+                android:paddingBottom="8dp"/>
 
-        <!-- Event Description -->
-        <TextView
-            android:id="@+id/tvEventDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Event Description"
-            android:textSize="16sp"
-            android:paddingBottom="12dp"/>
+            <!-- Divider -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="3dp"
+                android:background="@color/horizon"
+                android:layout_marginBottom="12dp"/>
 
-        <!-- Event Notes (Optional) -->
-        <TextView
-            android:id="@+id/tvEventNotes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Notes"
-            android:textSize="16sp"
-            android:textColor="#777777"/>
+            <!-- Event Date -->
+            <TextView
+                android:id="@+id/tvEventDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📅 12 Jan 2026"
+                android:textSize="15sp"
+                android:textColor="#4B5563"
+                android:paddingBottom="16dp"/>
 
-    </LinearLayout>
+            <!-- Description Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/horizon"
+                android:paddingBottom="4dp"/>
+
+            <!-- Event Description -->
+            <TextView
+                android:id="@+id/tvEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Description goes here..."
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:paddingBottom="20dp"/>
+
+            <!-- Notes Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/horizon"
+                android:paddingBottom="4dp"/>
+
+            <!-- Event Notes -->
+            <TextView
+                android:id="@+id/tvEventNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Optional notes for the event"
+                android:textSize="15sp"
+                android:textColor="#6B7280"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
 </ScrollView>
+
 

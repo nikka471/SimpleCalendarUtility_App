@@ -4,15 +4,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/horizonback"
     android:layout_height="match_parent">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/horizon"
         android:title="EventSnap"
-        android:titleTextColor="@android:color/white"
+        app:titleTextColor="@android:color/white"
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -41,8 +42,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="Add Event"
+      app:backgroundTint="@color/horizon"
         android:layout_margin="16dp"
         app:srcCompat="@android:drawable/ic_input_add"
+app:tint = "@color/white"
         app:layout_anchorGravity="bottom|end"
         app:layout_anchor="@id/rvEvents" />
 

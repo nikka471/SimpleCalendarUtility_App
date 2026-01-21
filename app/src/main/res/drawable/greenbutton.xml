@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <gradient android:angle="-45" android:startColor="#D2691E" android:endColor="#D2691E"/>
+    <!-- Gradient from lighter blue to #0478AA -->
+    <gradient
+        android:angle="-45"
+        android:startColor="#33A1C9"
+    android:endColor="#0478AA"/>
+
     <corners android:radius="15dp"/>
 </shape>
