@@ -73,6 +73,9 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
+    id("kotlin-parcelize")
+
+
 }
 
 android {
@@ -103,6 +106,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     kotlinOptions {
         jvmTarget = "11"
     }
@@ -123,11 +130,33 @@ dependencies {
     // RecyclerView
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
-    // Firebase
+//    // Firebase
+//    implementation(platform("com.google.firebase:firebase-bom:32.2.0"))
+//    implementation("com.google.firebase:firebase-analytics-ktx")
+//    implementation("com.google.firebase:firebase-firestore-ktx")
+//    implementation("com.google.firebase:firebase-crashlytics-ktx")
+
+    // Firebase BOM - manages versions automatically
     implementation(platform("com.google.firebase:firebase-bom:32.2.0"))
+
+// Firebase libraries (no versions needed)
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.firebase:firebase-crashlytics-ktx")
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-messaging-ktx")
+    // Firebase BOM already hai to version nahi dena
+    implementation("com.google.firebase:firebase-config-ktx")
+
+// <--- add this
+
+
+    implementation(libs.androidx.swiperefreshlayout)
+//    implementation(libs.firebase.auth)
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation(libs.googleid)
+//    implementation(libs.firebase.messaging)
 
     // Testing
     testImplementation(libs.junit)
